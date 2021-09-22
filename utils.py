@@ -1,7 +1,7 @@
 import os
 import re
 import json
-from re_patterns import *
+from CoqGym.re_patterns import *
 from hashlib import sha1
 from glob import glob
 from progressbar import ProgressBar

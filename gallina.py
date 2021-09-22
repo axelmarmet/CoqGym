@@ -1,6 +1,6 @@
 # Utilities for reconstructing Gallina terms from their serialized S-expressions in CoqGym
 from io import StringIO
-from vernac_types import Constr__constr
+from CoqGym.vernac_types import Constr__constr
 from lark import Lark, Transformer, Visitor, Discard
 from lark.lexer import Token
 from lark.tree import Tree

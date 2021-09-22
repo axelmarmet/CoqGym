@@ -1,7 +1,7 @@
 import os
 import json
 from glob import glob
-from utils import get_code, SexpCache, set_paths, extract_code, dst_filename
+from CoqGym.utils import get_code, SexpCache, set_paths, extract_code, dst_filename
 from serapi import SerAPI
 import pdb
 
