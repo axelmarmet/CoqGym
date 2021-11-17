@@ -59,16 +59,16 @@ class GallinaTermParser:
         traverse_postorder(ast, get_quantified_idents)
         ast.quantified_idents = list(ast.quantified_idents)
 
-        def compute_height_remove_toekn(node):
+        def compute_height(node):
             children = []
             node.height = 0
             for c in node.children:
                 if isinstance(c, Tree):
                     node.height = max(node.height, c.height + 1)
-                    children.append(c)
-            node.children = children
+            #         children.append(c)
+            # node.children = children
 
-        traverse_postorder(ast, compute_height_remove_toekn)
+        traverse_postorder(ast, compute_height)
         return ast
 
     def parse(self, term_str):
